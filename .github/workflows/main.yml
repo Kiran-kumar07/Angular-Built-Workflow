@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-       - uses: actions/checkout@v6.0.3
+       - uses: actions/checkout@v4
        
        - name: Setup Node JS
        
-        uses: actions/setup-node@v6.4.0
+        uses: actions/setup-node@v4
         with:
           node-version: 22.x
           
@@ -21,7 +21,7 @@ jobs:
          run: npm Install
          
        - name: Built Angular App
-         run: npm built run
+         run: npm run built
          
         
         
