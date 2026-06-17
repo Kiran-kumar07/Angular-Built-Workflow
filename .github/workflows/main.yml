@@ -16,14 +16,12 @@ jobs:
           node-version: 22.x
 
       - name: Install Dependencies
-        run: npm install
+       run: npm install
+       working-directory: ./my-app
 
-      - name: Built Angular App
+      - name: Build Angular App
         run: npm run build
-         
-        
-        
-       
+        working-directory: ./my-app
         
       
  
